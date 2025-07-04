@@ -1,0 +1,362 @@
+
+div,span,button{
+  
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+  margin-top: 50px;
+}
+
+.logo-box {
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  .logo {
+    width: 100px;
+  }
+
+  
+
+  .logo-text {
+    font-weight: bold;
+    color: #2e7d32;
+    line-height: 1.2;
+    font-size: 16px;
+
+    .subtext {
+      color: #fbc02d;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.menu-box {
+  display: flex;
+  gap: 8px;
+
+  .home-btn {
+    background-color: #4caf50;
+    color: white;
+    font-weight: 500;
+  }
+
+  .outline-btn {
+    border-color: #4caf50 !important;
+    color: #388e3c !important;
+    font-weight: 500;
+
+    border-radius: 24px;
+  }
+}
+
+.weather-box {
+  display: flex;
+  align-items: center;
+  color: #2e7d32;
+  font-size: 14px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;    // จัดกลางแนวตั้ง
+  height: 100%;           // เต็มความสูง container
+  margin-top: 0; 
+  line-height: 100px;         // ลบ margin ด้านบน
+
+  width: 180px;
+
+  mat-form-field {
+    width: 100%;
+
+    .mat-form-field-outline {
+      border-radius: 30px;
+    }
+  }
+}
+
+
+.signup-box {
+  .signup-btn {
+    background: linear-gradient(to right, #66bb6a, #fdd835);
+    color: white;
+    font-weight: 500;
+    border-radius: 24px;
+  }
+}
+
+
+
+.home-btn-gradient {
+  background: linear-gradient(90deg, 
+              #5a7d09 0%,
+              #5e810c 30%, 
+              #5d7f0d 50%,               
+              #5b7d0b 70%, 
+              #5a7d09 100%);
+  color: white !important;
+  font-weight: 500;
+  border-radius: 24px;
+  padding: 8px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: 0.2s;
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+
+  mat-icon {
+    font-size: 20px;
+  }
+}
+
+
+.bg-default {
+  background-color: #edfce8;
+}
+
+
+.body {
+  background-color: #FFF;
+  padding: 0px 1px 0px 1px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* เงาบน */
+}
+
+
+.slide {
+  height: 100vh;  /* ความสูงเต็ม viewport */
+  width: 100%;    /* กว้างเต็ม */
+  background-image: url("https://science.mcru.ac.th/rice-base/assets/images/rice/bg-002.png");
+  background-color: #66bb6a;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.slide::before {
+  content: "";
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.card {
+  background-color: #5a7d09; /* เขียวอ่อนแบบในภาพ */
+  color: white;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background-image: 
+    linear-gradient(135deg, #df9e06, #a3b903),
+    url("/assets/images/rice/bg-toolbar.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light; /* หรือลอง multiply, soft-light ก็ได้ */
+  z-index: -3;
+}
+
+
+
+.card-rounded {
+  border-radius: 20px;
+}
+
+
+.icon-wrapper {
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  display: inline-block;
+}
+
+
+
+.secondary{
+  background-image: url("/assets/images/rice/5.png");
+}
+
+
+.prompt-thin {
+  font-family: "Prompt", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.prompt-extralight {
+  font-family: "Prompt", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.prompt-light {
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.prompt-regular {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.prompt-medium {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.prompt-semibold {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.prompt-bold {
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.prompt-extrabold {
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.prompt-black {
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.prompt-thin-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.prompt-extralight-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.prompt-light-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.prompt-regular-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.prompt-medium-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.prompt-semibold-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.prompt-bold-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.prompt-extrabold-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.prompt-black-italic {
+  font-family: "Prompt", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.slider .title{
+  color: #FFF !important;
+  text-shadow: 0 -4px 5px rgba(0, 0, 0, 0.8); /* เงาด้านบนสีดำ */
+}
+
+
+.header-toolbar {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.90)),
+    url("/assets/images/rice/bg-toolbar-02.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+
+/* ซ่อนบน Desktop */
+.mobile-only {
+  display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+
+  .desktop-only {
+    display: none;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .logo {
+  }
+
+  .mobile-sidenav {
+    padding: 16px;
+  }
+}
+
+.right-menu{
+  position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}

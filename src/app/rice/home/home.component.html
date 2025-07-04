@@ -1,0 +1,165 @@
+<div class="row bg-default">
+  <div class="col-lg-1 col-md-0 col-xl-1 col-xxl-2 "></div>
+  <div class="col-lg-10 col-md-12 col-xl-10 col-xxl-8">
+
+    
+    <mat-toolbar class="header-toolbar"
+      style="box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5); padding-bottom: 100px; padding-top: 25px;">
+
+      <div class="grid-container">
+
+        <!-- โลโก้ + ชื่อ -->
+        <div class="logo-box">
+          <img src="https://science.mcru.ac.th/rice-base/assets/images/rice/ratchaburi-logo.png" alt="logo" class="logo" />
+        </div>
+
+       
+       
+        <!-- เมนู -->
+<div class="menu-box  desktop-only" >
+  <!-- ปุ่มหน้าแรก: แสดงทุกขนาดจอ -->
+  <button mat-raised-button class="home-btn-gradient">
+    <mat-icon>home</mat-icon> &nbsp; หน้าแรก
+  </button>
+
+  <!-- ปุ่มติดต่อ + เส้นทาง: ซ่อนบนมือถือ -->
+  <div class="mobile-menu">
+    <button mat-stroked-button class="outline-btn">
+      <mat-icon>call</mat-icon> &nbsp; ติดต่อ
+    </button>
+    <button mat-stroked-button class="outline-btn">
+      <mat-icon>location_on</mat-icon> &nbsp; เส้นทาง
+    </button>
+  </div>
+
+  
+
+</div>
+
+
+<div class="mobile-menu mobile-only right-menu">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>home</mat-icon>
+    <span>หน้าแรก</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>call</mat-icon>
+    <span>ติดต่อ</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>location_on</mat-icon>
+    <span>เส้นทาง</span>
+  </button>
+  
+</mat-menu>
+</div>
+
+
+
+
+
+        <!-- อากาศ + ค้นหา -->
+        <div class="weather-box desktop-only">
+          <mat-icon>cloud</mat-icon> 31°
+        </div>
+
+        <div class="search-box desktop-only" style="margin-top: 20px;">
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="" />
+            <button mat-icon-button matSuffix>
+              <mat-icon>search</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+
+        <!-- Sign up -->
+        <div class="signup-box desktop-only">
+          <button mat-raised-button class="signup-btn">
+            <mat-icon>account_circle</mat-icon> &nbsp; Sign up
+          </button>
+        </div>
+        </div>
+   
+    </mat-toolbar>
+
+
+
+
+    <div style="box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+">
+      <div class="slide" style="text-align: center; color: black; padding: 4rem 1rem;">
+
+        <div class="slider">
+          <div style="font-size: 5rem; line-height: 1.2;" class="title">ระบบบริหารจัดการ</div>
+          <div style="font-size: 5rem; line-height: 1.2;" class="title">ฐานข้อมูลดิจิทัลด้านข้าว</div>
+          <div style="margin-top: 2rem;">
+            <button (click)="test()"
+              style="cursor: pointer;background-color: #f1c40f; color: #5a7d09; padding: 1rem 2rem; border: none; border-radius: 8px; font-size: 1.5rem; border-radius: 24px; box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1)">
+              ในพื้นที่จังหวัดราชบุรี
+            </button>
+          </div>
+        </div>
+
+        <div class="container " style="margin-top: 80px; max-width: 800px;">
+          <div class="row text-center justify-content-center g-4">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 " *ngFor="let item of menuItems"
+              style=" margin-bottom: 20px;">
+              <div class="card h-100 border-0 shadow-sm text-white p-3"
+                style=" border-radius: 25px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+
+                <div
+                  style="height: 160px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                  <img [src]="item.icon" [alt]="item.title" style="width: 80px; margin-bottom: 20px; display: block;">
+                  <div style="
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    word-break: break-word;
+    white-space: normal;
+    max-width: 100%;
+  ">
+                    {{ item.title }}
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="secondary" style="margin-top: -30px;">
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+  </div>
+  <div class="col-lg-1 col-md-0 col-xl-1 col-xxl-2"></div>
+</div>

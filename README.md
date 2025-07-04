@@ -1,2 +1,2 @@
-# rice-base
-ระบบบริหารจัดการ ฐานข้อมูลดิจิทัลด้านข้าว
+# Modernize-Angular-pro
+Modernize Angular Admin Dashboard
